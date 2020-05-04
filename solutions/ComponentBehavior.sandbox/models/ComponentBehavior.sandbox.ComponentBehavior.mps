@@ -5,8 +5,11 @@
     <use id="17ce8e5a-8510-4af6-a493-490e056b4626" name="ComponentBehavior" version="-1" />
     <use id="218e40b4-75d4-4de8-83e6-b31e4da8bcee" name="Component" version="0" />
     <use id="a8f70f9e-ef01-499f-885c-c79273fa1695" name="Algorithm" version="0" />
+    <use id="8fb3e629-b68f-443e-b616-d61142df624b" name="SoftwarePlatforms" version="0" />
+    <use id="14d6bc92-051d-4467-84c8-9af7439a864f" name="Orocos" version="0" />
     <engage id="8d7c3baa-c6d4-442a-843a-34b7b957af1e" name="Algorithm_CGenerator" />
     <engage id="799e1c52-9b30-4cc9-95fb-3ef4e103cc77" name="ComponentOrocosGenerator" />
+    <engage id="39e764cb-e4fa-4923-82f4-60e672350a27" name="OrocosProgramScript" />
   </languages>
   <imports />
   <registry>
@@ -14,12 +17,28 @@
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
     </language>
     <language id="218e40b4-75d4-4de8-83e6-b31e4da8bcee" name="Component">
+      <concept id="3475673830596210328" name="Component.structure.IPortRef" flags="ng" index="FWJLR">
+        <reference id="3475673830596210329" name="port" index="FWJLQ" />
+      </concept>
+      <concept id="6055303931581434606" name="Component.structure.IComponentInst" flags="ng" index="2WYcwT">
+        <reference id="6055303931581444256" name="componentDescription" index="2WYf9R" />
+        <child id="494146162517828036" name="refPorts" index="l9eUl" />
+      </concept>
+      <concept id="6055303931581434605" name="Component.structure.ComponentInst" flags="ng" index="2WYcwU" />
       <concept id="1695646464731827429" name="Component.structure.OutputPort" flags="ng" index="3tteAs" />
+      <concept id="1695646464731827419" name="Component.structure.System" flags="ng" index="3tteAy">
+        <child id="1695646464731852539" name="components" index="3ttgI2" />
+        <child id="1695646464731852542" name="connections" index="3ttgI7" />
+      </concept>
       <concept id="1695646464731827418" name="Component.structure.Component" flags="ng" index="3tteAz">
         <child id="6055303931582182327" name="lifeCycle" index="2WWV5w" />
         <child id="1695646464731834604" name="ports" index="3ttcQl" />
       </concept>
       <concept id="1695646464731827421" name="Component.structure.InputPort" flags="ng" index="3tteA$" />
+      <concept id="1695646464731827420" name="Component.structure.Connection" flags="ng" index="3tteA_">
+        <reference id="1695646464731834585" name="target" index="3ttcQw" />
+        <reference id="1695646464731834588" name="source" index="3ttcQ_" />
+      </concept>
       <concept id="1695646464731827422" name="Component.structure.IPort" flags="ng" index="3tteAB">
         <child id="6776104396491580446" name="type" index="17RAGi" />
       </concept>
@@ -82,7 +101,13 @@
         <child id="7374807014778509153" name="type" index="1OHwi9" />
       </concept>
     </language>
+    <language id="14d6bc92-051d-4467-84c8-9af7439a864f" name="Orocos">
+      <concept id="6641102591361616477" name="Orocos.structure.IMOrocos" flags="ng" index="2R8en3" />
+    </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -187,8 +212,8 @@
       <ref role="1OHyup" node="4sLBCvXvAIN" resolve="in" />
     </node>
     <node concept="1OHxBB" id="4sLBCvXvAJx" role="3SlQUq">
-      <ref role="1OHxBS" node="4sLBCvXvAId" resolve="in" />
       <ref role="1OHyup" node="4sLBCvXvAJe" resolve="function_in" />
+      <ref role="1OHxBS" node="4sLBCvXvAIU" resolve="out" />
     </node>
     <node concept="1OHxBB" id="4sLBCvXvAJC" role="3SlQUq">
       <ref role="1OHxBS" node="4sLBCvXvAJl" resolve="function_out" />
@@ -197,6 +222,40 @@
     <node concept="1OHxBB" id="4sLBCvXvAJ8" role="3SlQUq">
       <ref role="1OHxBS" node="4sLBCvXvAIU" resolve="out" />
       <ref role="1OHyup" node="4sLBCvXvAIA" resolve="out" />
+    </node>
+  </node>
+  <node concept="3tteAy" id="5UuUeEnkWkg">
+    <property role="TrG5h" value="mysystem" />
+    <node concept="3tteA_" id="5UuUeEnkWl8" role="3ttgI7">
+      <property role="TrG5h" value="conn1" />
+      <ref role="3ttcQ_" node="5UuUeEnkWkz" />
+      <ref role="3ttcQw" node="5UuUeEnkWl0" />
+    </node>
+    <node concept="2WYcwU" id="5UuUeEnkWkh" role="3ttgI2">
+      <property role="TrG5h" value="c1" />
+      <ref role="2WYf9R" node="4sLBCvXvoYm" resolve="mycomponent" />
+      <node concept="FWJLR" id="5UuUeEnkWky" role="l9eUl">
+        <ref role="FWJLQ" node="4sLBCvXvB7$" resolve="component_in" />
+      </node>
+      <node concept="FWJLR" id="5UuUeEnkWkz" role="l9eUl">
+        <ref role="FWJLQ" node="4sLBCvXvB7M" resolve="component_out" />
+      </node>
+      <node concept="2R8en3" id="5UuUeEnom8G" role="lGtFl">
+        <property role="TrG5h" value="Orocos (Software Platform)" />
+      </node>
+    </node>
+    <node concept="2WYcwU" id="5UuUeEnkWkU" role="3ttgI2">
+      <property role="TrG5h" value="c2" />
+      <ref role="2WYf9R" node="4sLBCvXvoYm" resolve="mycomponent" />
+      <node concept="FWJLR" id="5UuUeEnkWl0" role="l9eUl">
+        <ref role="FWJLQ" node="4sLBCvXvB7$" resolve="component_in" />
+      </node>
+      <node concept="FWJLR" id="5UuUeEnkWl1" role="l9eUl">
+        <ref role="FWJLQ" node="4sLBCvXvB7M" resolve="component_out" />
+      </node>
+      <node concept="2R8en3" id="5UuUeEnom9i" role="lGtFl">
+        <property role="TrG5h" value="Orocos (Software Platform)" />
+      </node>
     </node>
   </node>
 </model>
