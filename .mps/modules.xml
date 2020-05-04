@@ -4,6 +4,7 @@
     <projectModules>
       <modulePath path="$PROJECT_DIR$/languages/ComponentBehavior/ComponentBehavior.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/ComponentOrocosGenerator/ComponentOrocosGenerator.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/ComponentBehavior.build/ComponentBehavior.build.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/ComponentBehavior.sandbox/ComponentBehavior.sandbox.msd" folder="" />
     </projectModules>
   </component>
