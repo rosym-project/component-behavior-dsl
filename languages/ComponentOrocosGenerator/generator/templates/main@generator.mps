@@ -10,9 +10,9 @@
     <import index="47d3" ref="r:186aac84-3221-4de3-be35-8e549517a374(ComponentBehavior.structure)" />
     <import index="yvgz" ref="r:3b411c10-569a-4299-9505-176144359d3b(Algorithm.structure)" />
     <import index="2g3d" ref="r:b9850e82-e887-4d10-9c8c-03f245d17299(main@generator)" />
+    <import index="ixp9" ref="r:172690fd-5286-4218-b525-cadaaf47af22(Algorithm.behavior)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="563x" ref="r:3a3ea8c3-d942-485f-88b8-ca680ac23dd9(ComponentBehavior.behavior)" implicit="true" />
-    <import index="ixp9" ref="r:172690fd-5286-4218-b525-cadaaf47af22(Algorithm.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts">
@@ -405,6 +405,56 @@
           <property role="TrG5h" value="&gt;" />
         </node>
         <node concept="2EixSi" id="4sLBCvXxgRW" role="2EinRH" />
+      </node>
+      <node concept="356sEK" id="4E_NNBeWQ8_" role="383Ya9">
+        <node concept="356sEF" id="4E_NNBeWQ8A" role="356sEH">
+          <property role="TrG5h" value="#include &quot;header.h&quot;" />
+          <node concept="1sPUBX" id="4E_NNBeXeeV" role="lGtFl">
+            <ref role="v9R2y" to="2g3d:w_xyS7nP1A" resolve="switch_FunctionHeaderInclude" />
+          </node>
+        </node>
+        <node concept="2EixSi" id="4E_NNBeWQ8B" role="2EinRH" />
+        <node concept="1WS0z7" id="4E_NNBeXbGb" role="lGtFl">
+          <node concept="3JmXsc" id="4E_NNBeXbGe" role="3Jn$fo">
+            <node concept="3clFbS" id="4E_NNBeXbGf" role="2VODD2">
+              <node concept="3clFbF" id="4E_NNBeXbGl" role="3cqZAp">
+                <node concept="2OqwBi" id="4E_NNBeXdKt" role="3clFbG">
+                  <node concept="2OqwBi" id="4E_NNBeXdcP" role="2Oq$k0">
+                    <node concept="1PxgMI" id="4E_NNBeXcYq" role="2Oq$k0">
+                      <property role="1BlNFB" value="true" />
+                      <node concept="chp4Y" id="4E_NNBeXd0c" role="3oSUPX">
+                        <ref role="cht4Q" to="47d3:4sLBCvXv8cc" resolve="AlgorithmBehavior" />
+                      </node>
+                      <node concept="2OqwBi" id="4E_NNBeXcyE" role="1m5AlR">
+                        <node concept="1PxgMI" id="4E_NNBeXcnf" role="2Oq$k0">
+                          <property role="1BlNFB" value="true" />
+                          <node concept="chp4Y" id="4E_NNBeXcoz" role="3oSUPX">
+                            <ref role="cht4Q" to="47d3:4sLBCvXv7MC" resolve="SimpleLifeCycle" />
+                          </node>
+                          <node concept="2OqwBi" id="4E_NNBeXbGg" role="1m5AlR">
+                            <node concept="30H73N" id="4E_NNBeXbGk" role="2Oq$k0" />
+                            <node concept="3TrEf2" id="4E_NNBeXc8l" role="2OqNvi">
+                              <ref role="3Tt5mk" to="l1zz:5g8KHvCYReR" resolve="lifeCycle" />
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="3TrEf2" id="4E_NNBeXcHO" role="2OqNvi">
+                          <ref role="3Tt5mk" to="47d3:4sLBCvXv89s" resolve="updateBehavior" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3TrEf2" id="4E_NNBeXdua" role="2OqNvi">
+                      <ref role="3Tt5mk" to="47d3:4sLBCvXv8gh" resolve="algorithm" />
+                    </node>
+                  </node>
+                  <node concept="2qgKlT" id="4E_NNBeXe0I" role="2OqNvi">
+                    <ref role="37wK5l" to="ixp9:w_xyS75A9A" resolve="getAllContainedFunctionBlocks" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="356sEK" id="4sLBCvXxehm" role="383Ya9">
         <node concept="2EixSi" id="4sLBCvXxeho" role="2EinRH" />
