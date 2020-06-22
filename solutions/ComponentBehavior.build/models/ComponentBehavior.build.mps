@@ -4,12 +4,14 @@
   <languages>
     <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="0" />
     <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="7" />
-    <use id="990507d3-3527-4c54-bfe9-0ca3c9c6247a" name="com.dslfoundry.plaintextgen" version="0" />
   </languages>
   <imports>
     <import index="ffeo" ref="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)" />
     <import index="cenz" ref="r:43952558-28ac-4066-bf0b-48555bda5854(Component.build)" />
     <import index="empi" ref="r:3f1a5485-eae3-46de-964a-3276e8b8595b(Algorithm.build)" />
+    <import index="g0to" ref="r:32ef34b8-6ceb-4dea-9d30-d0460dfd5538(com.dslfoundry.plaintextgen.build)" />
+    <import index="223r" ref="r:46a08810-4c3e-47f2-8374-c3d57996f010(cosmo.dimensions.build.plugin)" />
+    <import index="5dv1" ref="r:194a337e-1208-4e47-b397-de3f7aa7ad6b(KinematicChains.build)" />
   </imports>
   <registry>
     <language id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build">
@@ -145,8 +147,8 @@
               <property role="2Ry0Am" value="build" />
               <node concept="2Ry0Ak" id="5UuUeEnkWeZ" role="2Ry0An">
                 <property role="2Ry0Am" value="artifacts" />
-                <node concept="2Ry0Ak" id="5UuUeEnkWf4" role="2Ry0An">
-                  <property role="2Ry0Am" value="algorithm-dsl" />
+                <node concept="2Ry0Ak" id="55AzKcN3AlE" role="2Ry0An">
+                  <property role="2Ry0Am" value="algorithm" />
                 </node>
               </node>
             </node>
@@ -165,7 +167,7 @@
               <property role="2Ry0Am" value="build" />
               <node concept="2Ry0Ak" id="5UuUeEnkWgb" role="2Ry0An">
                 <property role="2Ry0Am" value="artifacts" />
-                <node concept="2Ry0Ak" id="5UuUeEnkWgg" role="2Ry0An">
+                <node concept="2Ry0Ak" id="51TSWhYZEPw" role="2Ry0An">
                   <property role="2Ry0Am" value="Component" />
                 </node>
               </node>
@@ -190,6 +192,24 @@
       <ref role="1l3spb" to="cenz:2RDM3_ZXurU" resolve="Component" />
       <node concept="398BVA" id="5UuUeEnkWgr" role="2JcizS">
         <ref role="398BVh" node="5UuUeEnkWfg" resolve="component_home" />
+      </node>
+    </node>
+    <node concept="2sgV4H" id="55AzKcN2C7T" role="1l3spa">
+      <ref role="1l3spb" to="g0to:62bw8DmfoBA" resolve="com.dslfoundry.plaintextgen" />
+      <node concept="398BVA" id="55AzKcN2Gcj" role="2JcizS">
+        <ref role="398BVh" node="55AzKcN2C8C" resolve="plaintextgen_home" />
+      </node>
+    </node>
+    <node concept="2sgV4H" id="55AzKcN3v_g" role="1l3spa">
+      <ref role="1l3spb" to="223r:44Dwksk3ZMb" resolve="dimensions" />
+      <node concept="398BVA" id="55AzKcN3v_u" role="2JcizS">
+        <ref role="398BVh" node="55AzKcN3v$b" resolve="dimensions_home" />
+      </node>
+    </node>
+    <node concept="2sgV4H" id="55AzKcN3wav" role="1l3spa">
+      <ref role="1l3spb" to="5dv1:2RDM3_ZXwQQ" resolve="KinematicChains" />
+      <node concept="398BVA" id="55AzKcN3waJ" role="2JcizS">
+        <ref role="398BVh" node="55AzKcN3w9h" resolve="kinematicChains_home" />
       </node>
     </node>
     <node concept="1l3spV" id="5UuUeEnkK2y" role="1l3spN">
@@ -232,7 +252,15 @@
       <node concept="m$_yC" id="5UuUeEnkKtv" role="m$_yJ">
         <ref role="m$_y1" to="cenz:2RDM3_ZXus7" resolve="Component" />
       </node>
-      <node concept="m$_yC" id="5UuUeEnkWjJ" role="m$_yJ" />
+      <node concept="m$_yC" id="55AzKcN2GcS" role="m$_yJ">
+        <ref role="m$_y1" to="g0to:62bw8DmfoBS" resolve="com.dslfoundry.plaintextgen" />
+      </node>
+      <node concept="m$_yC" id="55AzKcN3v_B" role="m$_yJ">
+        <ref role="m$_y1" to="223r:44Dwksk3ZM$" resolve="dimensions" />
+      </node>
+      <node concept="m$_yC" id="55AzKcN3waT" role="m$_yJ">
+        <ref role="m$_y1" to="5dv1:2RDM3_ZXwR3" resolve="KinematicChains" />
+      </node>
       <node concept="3_J27D" id="5UuUeEnkK2u" role="m_cZH">
         <node concept="3Mxwew" id="5UuUeEnkK2v" role="3MwsjC">
           <property role="3MwjfP" value="component-behavior-dsl" />
@@ -277,41 +305,13 @@
             </node>
           </node>
         </node>
-        <node concept="1yeLz9" id="5UuUeEnkK2J" role="1TViLv">
-          <property role="TrG5h" value="ComponentBehavior#01" />
-          <property role="3LESm3" value="c47aea60-1faa-40e4-875e-567731c35cea" />
-          <node concept="1BupzO" id="5UuUeEnkK2P" role="3bR31x">
-            <property role="3ZfqAx" value="generator/templates" />
-            <property role="1Hdu6h" value="true" />
-            <property role="1HemKv" value="true" />
-            <node concept="3LXTmp" id="5UuUeEnkK2Q" role="1HemKq">
-              <node concept="55IIr" id="5UuUeEnkK2K" role="3LXTmr">
-                <node concept="2Ry0Ak" id="5UuUeEnkK2L" role="iGT6I">
-                  <property role="2Ry0Am" value="languages" />
-                  <node concept="2Ry0Ak" id="5UuUeEnkK2M" role="2Ry0An">
-                    <property role="2Ry0Am" value="ComponentBehavior" />
-                    <node concept="2Ry0Ak" id="5UuUeEnkK2N" role="2Ry0An">
-                      <property role="2Ry0Am" value="generator" />
-                      <node concept="2Ry0Ak" id="5UuUeEnkK2O" role="2Ry0An">
-                        <property role="2Ry0Am" value="templates" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="3qWCbU" id="5UuUeEnkK2R" role="3LXTna">
-                <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="5UuUeEnkKsc" role="3bR37C">
-          <node concept="3bR9La" id="5UuUeEnkKsd" role="1SiIV1">
+        <node concept="1SiIV0" id="51TSWhYZEP_" role="3bR37C">
+          <node concept="3bR9La" id="51TSWhYZEPA" role="1SiIV1">
             <ref role="3bR37D" to="empi:1byp$lDFZXj" resolve="Algorithm" />
           </node>
         </node>
-        <node concept="1SiIV0" id="5UuUeEnkKsi" role="3bR37C">
-          <node concept="1Busua" id="5UuUeEnkKsj" role="1SiIV1">
+        <node concept="1SiIV0" id="51TSWhYZEPF" role="3bR37C">
+          <node concept="1Busua" id="51TSWhYZEPG" role="1SiIV1">
             <ref role="1Busuk" to="cenz:6elPPFNPcJs" resolve="Component" />
           </node>
         </node>
@@ -325,7 +325,7 @@
             <property role="2Ry0Am" value="languages" />
             <node concept="2Ry0Ak" id="5UuUeEnkK2i" role="2Ry0An">
               <property role="2Ry0Am" value="ComponentOrocosGenerator" />
-              <node concept="2Ry0Ak" id="5UuUeEnkK2j" role="2Ry0An">
+              <node concept="2Ry0Ak" id="51TSWhYZER3" role="2Ry0An">
                 <property role="2Ry0Am" value="ComponentOrocosGenerator.mpl" />
               </node>
             </node>
@@ -384,14 +384,19 @@
               <ref role="3bR37D" node="5UuUeEnkK2f" resolve="ComponentBehavior" />
             </node>
           </node>
-          <node concept="1SiIV0" id="5UuUeEnkKst" role="3bR37C">
-            <node concept="3bR9La" id="5UuUeEnkKsu" role="1SiIV1">
+          <node concept="1SiIV0" id="51TSWhYZEPQ" role="3bR37C">
+            <node concept="3bR9La" id="51TSWhYZEPR" role="1SiIV1">
               <ref role="3bR37D" to="cenz:6elPPFNPcJs" resolve="Component" />
             </node>
           </node>
-          <node concept="1SiIV0" id="5UuUeEnkKsv" role="3bR37C">
-            <node concept="3bR9La" id="5UuUeEnkKsw" role="1SiIV1">
+          <node concept="1SiIV0" id="51TSWhYZEPS" role="3bR37C">
+            <node concept="3bR9La" id="51TSWhYZEPT" role="1SiIV1">
               <ref role="3bR37D" to="empi:1byp$lDFZXj" resolve="Algorithm" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="51TSWhYZIs$" role="3bR37C">
+            <node concept="3bR9La" id="51TSWhYZIs_" role="1SiIV1">
+              <ref role="3bR37D" to="empi:51TSWhYZIqQ" resolve="Algorithm_CGenerator#01" />
             </node>
           </node>
         </node>
@@ -438,14 +443,94 @@
           </node>
         </node>
       </node>
-      <node concept="1SiIV0" id="5UuUeEnkKsA" role="3bR37C">
-        <node concept="3bR9La" id="5UuUeEnkKsB" role="1SiIV1">
+      <node concept="1SiIV0" id="51TSWhYZEPZ" role="3bR37C">
+        <node concept="3bR9La" id="51TSWhYZEQ0" role="1SiIV1">
           <ref role="3bR37D" to="empi:1byp$lDFZ_Z" resolve="Algorithm.build" />
         </node>
       </node>
-      <node concept="1SiIV0" id="5UuUeEnkKsC" role="3bR37C">
-        <node concept="3bR9La" id="5UuUeEnkKsD" role="1SiIV1">
+      <node concept="1SiIV0" id="51TSWhYZEQ1" role="3bR37C">
+        <node concept="3bR9La" id="51TSWhYZEQ2" role="1SiIV1">
           <ref role="3bR37D" to="cenz:6elPPFNPcQf" resolve="Component.build" />
+        </node>
+      </node>
+      <node concept="1SiIV0" id="55AzKcN2C7z" role="3bR37C">
+        <node concept="3bR9La" id="55AzKcN2C7$" role="1SiIV1">
+          <ref role="3bR37D" to="g0to:62bw8DmfoCB" resolve="com.dslfoundry.plaintextgen" />
+        </node>
+      </node>
+      <node concept="1SiIV0" id="55AzKcN2Gcz" role="3bR37C">
+        <node concept="3bR9La" id="55AzKcN2Gc$" role="1SiIV1">
+          <ref role="3bR37D" to="g0to:62bw8DmfoD3" resolve="com.dslfoundry.plaintextgen.build" />
+        </node>
+      </node>
+      <node concept="1SiIV0" id="55AzKcN3v_V" role="3bR37C">
+        <node concept="3bR9La" id="55AzKcN3v_W" role="1SiIV1">
+          <ref role="3bR37D" to="223r:6elPPFNHp85" resolve="cosmo.dimensions.build" />
+        </node>
+      </node>
+      <node concept="1SiIV0" id="55AzKcN3wbe" role="3bR37C">
+        <node concept="3bR9La" id="55AzKcN3wbf" role="1SiIV1">
+          <ref role="3bR37D" to="5dv1:6elPPFNHgmj" resolve="KinematicChains.build" />
+        </node>
+      </node>
+    </node>
+    <node concept="398rNT" id="55AzKcN2C8C" role="1l3spd">
+      <property role="TrG5h" value="plaintextgen_home" />
+      <node concept="55IIr" id="55AzKcN2C8U" role="398pKh">
+        <node concept="2Ry0Ak" id="55AzKcN2C8X" role="iGT6I">
+          <property role="2Ry0Am" value=".." />
+          <node concept="2Ry0Ak" id="55AzKcN2C92" role="2Ry0An">
+            <property role="2Ry0Am" value="mps-plaintextgen" />
+            <node concept="2Ry0Ak" id="55AzKcN2Gc5" role="2Ry0An">
+              <property role="2Ry0Am" value="build" />
+              <node concept="2Ry0Ak" id="55AzKcN2Gcc" role="2Ry0An">
+                <property role="2Ry0Am" value="artifacts" />
+                <node concept="2Ry0Ak" id="55AzKcN2Gch" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.dslfoundry.plaintextgen" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="398rNT" id="55AzKcN3v$b" role="1l3spd">
+      <property role="TrG5h" value="dimensions_home" />
+      <node concept="55IIr" id="55AzKcN3v$$" role="398pKh">
+        <node concept="2Ry0Ak" id="55AzKcN3v$B" role="iGT6I">
+          <property role="2Ry0Am" value=".." />
+          <node concept="2Ry0Ak" id="55AzKcN3v$G" role="2Ry0An">
+            <property role="2Ry0Am" value="dimensions-dsl" />
+            <node concept="2Ry0Ak" id="55AzKcN3v$L" role="2Ry0An">
+              <property role="2Ry0Am" value="build" />
+              <node concept="2Ry0Ak" id="55AzKcN3v$Q" role="2Ry0An">
+                <property role="2Ry0Am" value="artifacts" />
+                <node concept="2Ry0Ak" id="55AzKcN3v$V" role="2Ry0An">
+                  <property role="2Ry0Am" value="dimensions" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="398rNT" id="55AzKcN3w9h" role="1l3spd">
+      <property role="TrG5h" value="kinematicChains_home" />
+      <node concept="55IIr" id="55AzKcN3w9L" role="398pKh">
+        <node concept="2Ry0Ak" id="55AzKcN3w9O" role="iGT6I">
+          <property role="2Ry0Am" value=".." />
+          <node concept="2Ry0Ak" id="55AzKcN3w9T" role="2Ry0An">
+            <property role="2Ry0Am" value="kinematic-chains-dsl" />
+            <node concept="2Ry0Ak" id="55AzKcN3w9Y" role="2Ry0An">
+              <property role="2Ry0Am" value="build" />
+              <node concept="2Ry0Ak" id="55AzKcN3wa3" role="2Ry0An">
+                <property role="2Ry0Am" value="artifacts" />
+                <node concept="2Ry0Ak" id="55AzKcN3wa8" role="2Ry0An">
+                  <property role="2Ry0Am" value="KinematicChains" />
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
       </node>
     </node>
