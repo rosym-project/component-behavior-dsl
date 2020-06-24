@@ -45,6 +45,7 @@
       <concept id="1219418625346" name="jetbrains.mps.lang.editor.structure.IStyleContainer" flags="ng" index="3F0Thp">
         <child id="1219418656006" name="styleItem" index="3F10Kt" />
       </concept>
+      <concept id="1073389882823" name="jetbrains.mps.lang.editor.structure.CellModel_RefNode" flags="sg" stub="730538219795960754" index="3F1sOY" />
       <concept id="1073390211982" name="jetbrains.mps.lang.editor.structure.CellModel_RefNodeList" flags="sg" stub="2794558372793454595" index="3F2HdR" />
       <concept id="1166049232041" name="jetbrains.mps.lang.editor.structure.AbstractComponent" flags="ng" index="1XWOmA">
         <reference id="1166049300910" name="conceptDeclaration" index="1XX52x" />
@@ -119,6 +120,60 @@
         <node concept="l2Vlx" id="7JrCdBmvjl$" role="2iSdaV" />
       </node>
       <node concept="2iRkQZ" id="7JrCdBmuPCB" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="2ZfrMhTizOo">
+    <ref role="1XX52x" to="47d3:4sLBCvXv7MC" resolve="SimpleLifeCycle" />
+    <node concept="3EZMnI" id="2ZfrMhTizOt" role="2wV5jI">
+      <node concept="3F0ifn" id="2ZfrMhTizOv" role="3EZMnx">
+        <property role="3F0ifm" value="Simple Lifecycle" />
+      </node>
+      <node concept="3EZMnI" id="2ZfrMhTizOF" role="3EZMnx">
+        <node concept="3F0ifn" id="2ZfrMhTizO$" role="3EZMnx">
+          <property role="3F0ifm" value="init" />
+        </node>
+        <node concept="3EZMnI" id="2ZfrMhTlpSf" role="3EZMnx">
+          <node concept="l2Vlx" id="2ZfrMhTlM2h" role="2iSdaV" />
+          <node concept="3F1sOY" id="2ZfrMhTlpSb" role="3EZMnx">
+            <ref role="1NtTu8" to="47d3:4sLBCvXv89n" resolve="initBehavior" />
+            <node concept="lj46D" id="2ZfrMhTlv05" role="3F10Kt">
+              <property role="VOm3f" value="true" />
+            </node>
+          </node>
+        </node>
+        <node concept="2iRkQZ" id="2ZfrMhTlkKC" role="2iSdaV" />
+      </node>
+      <node concept="3EZMnI" id="2ZfrMhTizOU" role="3EZMnx">
+        <node concept="3F0ifn" id="2ZfrMhTizOB" role="3EZMnx">
+          <property role="3F0ifm" value="shutdown" />
+        </node>
+        <node concept="3EZMnI" id="2ZfrMhTlv09" role="3EZMnx">
+          <node concept="l2Vlx" id="2ZfrMhTlM2k" role="2iSdaV" />
+          <node concept="3F1sOY" id="2ZfrMhTizP8" role="3EZMnx">
+            <ref role="1NtTu8" to="47d3:4sLBCvXv89p" resolve="shutdownBehavior" />
+            <node concept="lj46D" id="2ZfrMhTlM2n" role="3F10Kt">
+              <property role="VOm3f" value="true" />
+            </node>
+          </node>
+        </node>
+        <node concept="2iRkQZ" id="2ZfrMhTlv07" role="2iSdaV" />
+      </node>
+      <node concept="3EZMnI" id="2ZfrMhTizPt" role="3EZMnx">
+        <node concept="3F0ifn" id="2ZfrMhTizPi" role="3EZMnx">
+          <property role="3F0ifm" value="update" />
+        </node>
+        <node concept="3EZMnI" id="2ZfrMhTlv0i" role="3EZMnx">
+          <node concept="l2Vlx" id="2ZfrMhTlv0j" role="2iSdaV" />
+          <node concept="3F1sOY" id="2ZfrMhTizPJ" role="3EZMnx">
+            <ref role="1NtTu8" to="47d3:4sLBCvXv89s" resolve="updateBehavior" />
+            <node concept="lj46D" id="2ZfrMhTlM2p" role="3F10Kt">
+              <property role="VOm3f" value="true" />
+            </node>
+          </node>
+        </node>
+        <node concept="2iRkQZ" id="2ZfrMhTlv0g" role="2iSdaV" />
+      </node>
+      <node concept="2iRkQZ" id="2ZfrMhTizOw" role="2iSdaV" />
     </node>
   </node>
 </model>
