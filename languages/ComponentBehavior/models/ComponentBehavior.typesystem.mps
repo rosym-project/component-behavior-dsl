@@ -163,7 +163,7 @@
     </node>
     <node concept="1YaCAy" id="3eOYxdwrINz" role="1YuTPh">
       <property role="TrG5h" value="portMapping" />
-      <ref role="1YaFvo" to="47d3:4sLBCvXvB7r" resolve="PortMapping" />
+      <ref role="1YaFvo" to="47d3:4sLBCvXvB7r" resolve="PortToPortMapping" />
     </node>
   </node>
 </model>

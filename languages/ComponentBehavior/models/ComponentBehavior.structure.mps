@@ -85,24 +85,47 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="portMap" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="4sLBCvXvB7r" resolve="PortMapping" />
+      <ref role="20lvS9" node="5CpI4wBFgB9" resolve="IPortMapping" />
     </node>
   </node>
   <node concept="1TIwiD" id="4sLBCvXvB7r">
     <property role="EcuMT" value="5130055757462401499" />
-    <property role="TrG5h" value="PortMapping" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <property role="TrG5h" value="PortToPortMapping" />
+    <ref role="1TJDcQ" node="5CpI4wBFrRn" resolve="ToPortMapping" />
     <node concept="1TJgyj" id="4sLBCvXvB7s" role="1TKVEi">
       <property role="IQ2ns" value="5130055757462401500" />
       <property role="20kJfa" value="componentPort" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" to="l1zz:1u89nBaZcNu" resolve="IPort" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="5CpI4wBFgy$">
+    <property role="EcuMT" value="6492422957874088100" />
+    <property role="TrG5h" value="PropertyToPortMapping" />
+    <ref role="1TJDcQ" node="5CpI4wBFrRn" resolve="ToPortMapping" />
+    <node concept="1TJgyj" id="5CpI4wBFgy_" role="1TKVEi">
+      <property role="IQ2ns" value="6492422957874088101" />
+      <property role="20kJfa" value="componentProperty" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="l1zz:1u89nBaZcNE" resolve="Property" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="5CpI4wBFgB9">
+    <property role="EcuMT" value="6492422957874088393" />
+    <property role="TrG5h" value="IPortMapping" />
+  </node>
+  <node concept="1TIwiD" id="5CpI4wBFrRn">
+    <property role="EcuMT" value="6492422957874134487" />
+    <property role="TrG5h" value="ToPortMapping" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="4sLBCvXvB7u" role="1TKVEi">
       <property role="IQ2ns" value="5130055757462401502" />
       <property role="20kJfa" value="algorithmPort" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" to="yvgz:6po$YwiVCCi" resolve="DataPort" />
+    </node>
+    <node concept="PrWs8" id="5CpI4wBFrRo" role="PzmwI">
+      <ref role="PrY4T" node="5CpI4wBFgB9" resolve="IPortMapping" />
     </node>
   </node>
 </model>

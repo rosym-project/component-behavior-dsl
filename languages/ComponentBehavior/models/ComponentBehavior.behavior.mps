@@ -68,7 +68,7 @@
     </language>
   </registry>
   <node concept="13h7C7" id="4sLBCvXw17O">
-    <ref role="13h7C2" to="47d3:4sLBCvXvB7r" resolve="PortMapping" />
+    <ref role="13h7C2" to="47d3:4sLBCvXvB7r" resolve="PortToPortMapping" />
     <node concept="13i0hz" id="4sLBCvXw2XX" role="13h7CS">
       <property role="TrG5h" value="computeStorageVariableName" />
       <node concept="3Tm1VV" id="4sLBCvXw2XY" role="1B3o_S" />

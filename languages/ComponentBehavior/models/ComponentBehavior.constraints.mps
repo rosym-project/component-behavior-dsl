@@ -17,8 +17,8 @@
     <import index="6xgk" ref="r:6e9ad488-5df2-49e4-8c01-8a7f3812adf7(jetbrains.mps.lang.scopes.runtime)" />
     <import index="35tq" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.scope(MPS.Core/)" />
     <import index="47d3" ref="r:186aac84-3221-4de3-be35-8e549517a374(ComponentBehavior.structure)" implicit="true" />
-    <import index="yvgz" ref="r:3b411c10-569a-4299-9505-176144359d3b(Algorithm.structure)" implicit="true" />
     <import index="l1zz" ref="r:7dde0f85-b752-4c1f-8bd0-8361dd2efaa4(Component.structure)" implicit="true" />
+    <import index="yvgz" ref="r:3b411c10-569a-4299-9505-176144359d3b(Algorithm.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -76,7 +76,67 @@
     </language>
   </registry>
   <node concept="1M2fIO" id="5CpI4wBCxph">
-    <ref role="1M2myG" to="47d3:4sLBCvXvB7r" resolve="PortMapping" />
+    <ref role="1M2myG" to="47d3:4sLBCvXvB7r" resolve="PortToPortMapping" />
+    <node concept="1N5Pfh" id="5CpI4wBCQLu" role="1Mr941">
+      <ref role="1N5Vy1" to="47d3:4sLBCvXvB7s" resolve="componentPort" />
+      <node concept="3dgokm" id="5CpI4wBCR2w" role="1N6uqs">
+        <node concept="3clFbS" id="5CpI4wBCR2y" role="2VODD2">
+          <node concept="3clFbF" id="5CpI4wBCR3F" role="3cqZAp">
+            <node concept="2YIFZM" id="5CpI4wBCR6L" role="3clFbG">
+              <ref role="37wK5l" to="35tq:~SimpleRoleScope.forNamedElements(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.language.SContainmentLink)" resolve="forNamedElements" />
+              <ref role="1Pybhc" to="35tq:~SimpleRoleScope" resolve="SimpleRoleScope" />
+              <node concept="2OqwBi" id="5CpI4wBCRhI" role="37wK5m">
+                <node concept="2rP1CM" id="5CpI4wBCRap" role="2Oq$k0" />
+                <node concept="2Xjw5R" id="5CpI4wBCRrs" role="2OqNvi">
+                  <node concept="1xMEDy" id="5CpI4wBCRru" role="1xVPHs">
+                    <node concept="chp4Y" id="5CpI4wBCRHr" role="ri$Ld">
+                      <ref role="cht4Q" to="l1zz:1u89nBaZcNq" resolve="Component" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="359W_D" id="5CpI4wBCRRl" role="37wK5m">
+                <ref role="359W_E" to="l1zz:1u89nBaZcNq" resolve="Component" />
+                <ref role="359W_F" to="l1zz:1u89nBaZezG" resolve="ports" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="5CpI4wBFrMU">
+    <ref role="1M2myG" to="47d3:5CpI4wBFgy$" resolve="PropertyToPortMapping" />
+    <node concept="1N5Pfh" id="5CpI4wBFrMV" role="1Mr941">
+      <ref role="1N5Vy1" to="47d3:5CpI4wBFgy_" resolve="componentProperty" />
+      <node concept="3dgokm" id="5CpI4wBFsl3" role="1N6uqs">
+        <node concept="3clFbS" id="5CpI4wBFsl5" role="2VODD2">
+          <node concept="3clFbF" id="5CpI4wBFspl" role="3cqZAp">
+            <node concept="2YIFZM" id="5CpI4wBFsrX" role="3clFbG">
+              <ref role="37wK5l" to="35tq:~SimpleRoleScope.forNamedElements(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.language.SContainmentLink)" resolve="forNamedElements" />
+              <ref role="1Pybhc" to="35tq:~SimpleRoleScope" resolve="SimpleRoleScope" />
+              <node concept="2OqwBi" id="5CpI4wBFsAF" role="37wK5m">
+                <node concept="2rP1CM" id="5CpI4wBFsvn" role="2Oq$k0" />
+                <node concept="2Xjw5R" id="5CpI4wBFsKF" role="2OqNvi">
+                  <node concept="1xMEDy" id="5CpI4wBFsKH" role="1xVPHs">
+                    <node concept="chp4Y" id="5CpI4wBFsPj" role="ri$Ld">
+                      <ref role="cht4Q" to="l1zz:1u89nBaZcNq" resolve="Component" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="359W_D" id="5CpI4wBFt$6" role="37wK5m">
+                <ref role="359W_E" to="l1zz:1u89nBaZcNq" resolve="Component" />
+                <ref role="359W_F" to="l1zz:1u89nBaZezB" resolve="properties" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="5CpI4wBFs4d">
+    <ref role="1M2myG" to="47d3:5CpI4wBFrRn" resolve="ToPortMapping" />
     <node concept="1N5Pfh" id="5CpI4wBCxpi" role="1Mr941">
       <ref role="1N5Vy1" to="47d3:4sLBCvXvB7u" resolve="algorithmPort" />
       <node concept="3dgokm" id="5CpI4wBCxxt" role="1N6uqs">
@@ -103,33 +163,6 @@
               <node concept="359W_D" id="5CpI4wBCD2a" role="37wK5m">
                 <ref role="359W_E" to="yvgz:7YUYw4xHlaz" resolve="FunctionBlockContainer" />
                 <ref role="359W_F" to="yvgz:3eP8Zudp5G8" resolve="data_ports" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="1N5Pfh" id="5CpI4wBCQLu" role="1Mr941">
-      <ref role="1N5Vy1" to="47d3:4sLBCvXvB7s" resolve="componentPort" />
-      <node concept="3dgokm" id="5CpI4wBCR2w" role="1N6uqs">
-        <node concept="3clFbS" id="5CpI4wBCR2y" role="2VODD2">
-          <node concept="3clFbF" id="5CpI4wBCR3F" role="3cqZAp">
-            <node concept="2YIFZM" id="5CpI4wBCR6L" role="3clFbG">
-              <ref role="37wK5l" to="35tq:~SimpleRoleScope.forNamedElements(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.language.SContainmentLink)" resolve="forNamedElements" />
-              <ref role="1Pybhc" to="35tq:~SimpleRoleScope" resolve="SimpleRoleScope" />
-              <node concept="2OqwBi" id="5CpI4wBCRhI" role="37wK5m">
-                <node concept="2rP1CM" id="5CpI4wBCRap" role="2Oq$k0" />
-                <node concept="2Xjw5R" id="5CpI4wBCRrs" role="2OqNvi">
-                  <node concept="1xMEDy" id="5CpI4wBCRru" role="1xVPHs">
-                    <node concept="chp4Y" id="5CpI4wBCRHr" role="ri$Ld">
-                      <ref role="cht4Q" to="l1zz:1u89nBaZcNq" resolve="Component" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="359W_D" id="5CpI4wBCRRl" role="37wK5m">
-                <ref role="359W_E" to="l1zz:1u89nBaZcNq" resolve="Component" />
-                <ref role="359W_F" to="l1zz:1u89nBaZezG" resolve="ports" />
               </node>
             </node>
           </node>
