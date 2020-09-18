@@ -28,6 +28,7 @@
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
+      <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
       <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" stub="730538219795941030" index="1iCGBv">
         <child id="1088186146602" name="editorComponent" index="1sWHZn" />
       </concept>
@@ -191,6 +192,22 @@
             </node>
           </node>
         </node>
+      </node>
+      <node concept="3EZMnI" id="1sZtr$_musm" role="3EZMnx">
+        <node concept="VPM3Z" id="1sZtr$_muso" role="3F10Kt" />
+        <node concept="3F0ifn" id="1sZtr$_musq" role="3EZMnx">
+          <property role="3F0ifm" value="schedule" />
+        </node>
+        <node concept="1iCGBv" id="1sZtr$_musK" role="3EZMnx">
+          <ref role="1NtTu8" to="47d3:1sZtr$_murN" resolve="schedule" />
+          <node concept="1sVBvm" id="1sZtr$_musM" role="1sWHZn">
+            <node concept="3F0A7n" id="1sZtr$_musU" role="2wV5jI">
+              <property role="1Intyy" value="true" />
+              <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+            </node>
+          </node>
+        </node>
+        <node concept="2iRfu4" id="1sZtr$_musr" role="2iSdaV" />
       </node>
       <node concept="3F0ifn" id="7JrCdBmuSVT" role="3EZMnx">
         <property role="3F0ifm" value="port mapping" />

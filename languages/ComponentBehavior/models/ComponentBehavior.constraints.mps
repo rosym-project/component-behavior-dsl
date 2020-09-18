@@ -62,6 +62,10 @@
       <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
+      <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
+        <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+        <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
+      </concept>
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="2644386474301421077" name="jetbrains.mps.lang.smodel.structure.LinkIdRefExpression" flags="nn" index="359W_D">
         <reference id="2644386474301421078" name="conceptDeclaration" index="359W_E" />
@@ -70,6 +74,7 @@
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
       </concept>
+      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
       </concept>
@@ -163,6 +168,37 @@
               <node concept="359W_D" id="5CpI4wBCD2a" role="37wK5m">
                 <ref role="359W_E" to="yvgz:7YUYw4xHlaz" resolve="FunctionBlockContainer" />
                 <ref role="359W_F" to="yvgz:3eP8Zudp5G8" resolve="data_ports" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="1sZtr$_myoE">
+    <ref role="1M2myG" to="47d3:4sLBCvXv8cc" resolve="AlgorithmBehavior" />
+    <node concept="1N5Pfh" id="1sZtr$_myoF" role="1Mr941">
+      <ref role="1N5Vy1" to="47d3:1sZtr$_murN" resolve="schedule" />
+      <node concept="3dgokm" id="1sZtr$_mysq" role="1N6uqs">
+        <node concept="3clFbS" id="1sZtr$_mysr" role="2VODD2">
+          <node concept="3clFbF" id="1sZtr$_mIUI" role="3cqZAp">
+            <node concept="2YIFZM" id="1sZtr$_mKQZ" role="3clFbG">
+              <ref role="37wK5l" to="35tq:~SimpleRoleScope.forNamedElements(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.language.SContainmentLink)" resolve="forNamedElements" />
+              <ref role="1Pybhc" to="35tq:~SimpleRoleScope" resolve="SimpleRoleScope" />
+              <node concept="2OqwBi" id="1sZtr$_mO46" role="37wK5m">
+                <node concept="1PxgMI" id="1sZtr$_mNwy" role="2Oq$k0">
+                  <node concept="chp4Y" id="1sZtr$_mNIB" role="3oSUPX">
+                    <ref role="cht4Q" to="47d3:4sLBCvXv8cc" resolve="AlgorithmBehavior" />
+                  </node>
+                  <node concept="2rP1CM" id="1sZtr$_mL4F" role="1m5AlR" />
+                </node>
+                <node concept="3TrEf2" id="1sZtr$_mOqF" role="2OqNvi">
+                  <ref role="3Tt5mk" to="47d3:4sLBCvXv8gh" resolve="algorithm" />
+                </node>
+              </node>
+              <node concept="359W_D" id="1sZtr$_mQ2y" role="37wK5m">
+                <ref role="359W_E" to="yvgz:7YUYw4xHlaz" resolve="FunctionBlockContainer" />
+                <ref role="359W_F" to="yvgz:4iWYoaWUTsh" resolve="scheduler_blocks" />
               </node>
             </node>
           </node>

@@ -77,6 +77,11 @@
       <property role="20kJfa" value="algorithm" />
       <ref role="20lvS9" to="yvgz:7YUYw4xHlaz" resolve="FunctionBlockContainer" />
     </node>
+    <node concept="1TJgyj" id="1sZtr$_murN" role="1TKVEi">
+      <property role="IQ2ns" value="1675187024461162227" />
+      <property role="20kJfa" value="schedule" />
+      <ref role="20lvS9" to="yvgz:29RmJoXeePl" resolve="SchedulerBlock" />
+    </node>
     <node concept="PrWs8" id="4sLBCvXvp3i" role="PzmwI">
       <ref role="PrY4T" node="4sLBCvXv7K7" resolve="IBehavior" />
     </node>
