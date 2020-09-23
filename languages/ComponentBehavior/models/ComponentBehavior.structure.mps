@@ -3,17 +3,17 @@
   <persistence version="9" />
   <languages>
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="9" />
-    <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
     <import index="l1zz" ref="r:7dde0f85-b752-4c1f-8bd0-8361dd2efaa4(Component.structure)" />
+    <import index="yvgz" ref="r:3b411c10-569a-4299-9505-176144359d3b(Algorithm.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="yvgz" ref="r:3b411c10-569a-4299-9505-176144359d3b(Algorithm.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
+        <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
       </concept>
       <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
@@ -49,6 +49,13 @@
     <node concept="PrWs8" id="4sLBCvXv89l" role="PzmwI">
       <ref role="PrY4T" to="l1zz:4VBroJBs4v2" resolve="ILifeCycle" />
     </node>
+    <node concept="1TJgyj" id="7gRMHh5ylR$" role="1TKVEi">
+      <property role="IQ2ns" value="8374385045167234532" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="algorithm" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="yvgz:17L66asWE$6" resolve="AlgorithmBlockInst" />
+    </node>
     <node concept="1TJgyj" id="4sLBCvXv89n" role="1TKVEi">
       <property role="IQ2ns" value="5130055757462274647" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -72,15 +79,11 @@
     <property role="EcuMT" value="5130055757462274828" />
     <property role="TrG5h" value="AlgorithmBehavior" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="4sLBCvXv8gh" role="1TKVEi">
-      <property role="IQ2ns" value="5130055757462275089" />
-      <property role="20kJfa" value="algorithm" />
-      <ref role="20lvS9" to="yvgz:7YUYw4xHlaz" resolve="FunctionBlockContainer" />
-    </node>
     <node concept="1TJgyj" id="1sZtr$_murN" role="1TKVEi">
       <property role="IQ2ns" value="1675187024461162227" />
       <property role="20kJfa" value="schedule" />
-      <ref role="20lvS9" to="yvgz:29RmJoXeePl" resolve="SchedulerBlock" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="yvgz:1Nl8mqSY6OM" resolve="SchedulerBlockInst" />
     </node>
     <node concept="PrWs8" id="4sLBCvXvp3i" role="PzmwI">
       <ref role="PrY4T" node="4sLBCvXv7K7" resolve="IBehavior" />
@@ -122,15 +125,16 @@
   <node concept="1TIwiD" id="5CpI4wBFrRn">
     <property role="EcuMT" value="6492422957874134487" />
     <property role="TrG5h" value="ToPortMapping" />
+    <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="4sLBCvXvB7u" role="1TKVEi">
-      <property role="IQ2ns" value="5130055757462401502" />
-      <property role="20kJfa" value="algorithmPort" />
-      <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" to="yvgz:6po$YwiVCCi" resolve="DataPort" />
-    </node>
     <node concept="PrWs8" id="5CpI4wBFrRo" role="PzmwI">
       <ref role="PrY4T" node="5CpI4wBFgB9" resolve="IPortMapping" />
+    </node>
+    <node concept="1TJgyj" id="7gRMHh5zgtm" role="1TKVEi">
+      <property role="IQ2ns" value="8374385045167474518" />
+      <property role="20kJfa" value="algorithmPort" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="yvgz:29RmJoXeePk" resolve="DataBlock" />
     </node>
   </node>
 </model>

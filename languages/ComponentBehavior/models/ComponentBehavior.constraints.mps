@@ -71,6 +71,7 @@
         <reference id="2644386474301421078" name="conceptDeclaration" index="359W_E" />
         <reference id="2644386474301421079" name="linkDeclaration" index="359W_F" />
       </concept>
+      <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
       </concept>
@@ -143,31 +144,44 @@
   <node concept="1M2fIO" id="5CpI4wBFs4d">
     <ref role="1M2myG" to="47d3:5CpI4wBFrRn" resolve="ToPortMapping" />
     <node concept="1N5Pfh" id="5CpI4wBCxpi" role="1Mr941">
-      <ref role="1N5Vy1" to="47d3:4sLBCvXvB7u" resolve="algorithmPort" />
+      <ref role="1N5Vy1" to="47d3:7gRMHh5zgtm" resolve="algorithmPort" />
       <node concept="3dgokm" id="5CpI4wBCxxt" role="1N6uqs">
         <node concept="3clFbS" id="5CpI4wBCxxv" role="2VODD2">
           <node concept="3clFbF" id="5CpI4wBCCxd" role="3cqZAp">
             <node concept="2YIFZM" id="5CpI4wBCCz3" role="3clFbG">
               <ref role="37wK5l" to="35tq:~SimpleRoleScope.forNamedElements(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.language.SContainmentLink)" resolve="forNamedElements" />
               <ref role="1Pybhc" to="35tq:~SimpleRoleScope" resolve="SimpleRoleScope" />
-              <node concept="2OqwBi" id="5CpI4wBCyi_" role="37wK5m">
-                <node concept="2OqwBi" id="5CpI4wBCxTe" role="2Oq$k0">
-                  <node concept="2rP1CM" id="5CpI4wBCxK_" role="2Oq$k0" />
-                  <node concept="2Xjw5R" id="5CpI4wBCxYV" role="2OqNvi">
-                    <node concept="1xMEDy" id="5CpI4wBCxYX" role="1xVPHs">
-                      <node concept="chp4Y" id="5CpI4wBCytM" role="ri$Ld">
-                        <ref role="cht4Q" to="47d3:4sLBCvXv8cc" resolve="AlgorithmBehavior" />
+              <node concept="2OqwBi" id="1HXIG33Arss" role="37wK5m">
+                <node concept="2OqwBi" id="1HXIG33Aq91" role="2Oq$k0">
+                  <node concept="1PxgMI" id="1HXIG33ApV1" role="2Oq$k0">
+                    <node concept="chp4Y" id="1HXIG33ApXB" role="3oSUPX">
+                      <ref role="cht4Q" to="47d3:4sLBCvXv7MC" resolve="SimpleLifeCycle" />
+                    </node>
+                    <node concept="2OqwBi" id="5CpI4wBCyi_" role="1m5AlR">
+                      <node concept="2OqwBi" id="5CpI4wBCxTe" role="2Oq$k0">
+                        <node concept="2rP1CM" id="5CpI4wBCxK_" role="2Oq$k0" />
+                        <node concept="2Xjw5R" id="5CpI4wBCxYV" role="2OqNvi">
+                          <node concept="1xMEDy" id="5CpI4wBCxYX" role="1xVPHs">
+                            <node concept="chp4Y" id="5CpI4wBCytM" role="ri$Ld">
+                              <ref role="cht4Q" to="47d3:4sLBCvXv8cc" resolve="AlgorithmBehavior" />
+                            </node>
+                          </node>
+                        </node>
                       </node>
+                      <node concept="1mfA1w" id="1HXIG33ApKK" role="2OqNvi" />
                     </node>
                   </node>
+                  <node concept="3TrEf2" id="7gRMHh5ynBD" role="2OqNvi">
+                    <ref role="3Tt5mk" to="47d3:7gRMHh5ylR$" resolve="algorithm" />
+                  </node>
                 </node>
-                <node concept="3TrEf2" id="5CpI4wBCyC0" role="2OqNvi">
-                  <ref role="3Tt5mk" to="47d3:4sLBCvXv8gh" resolve="algorithm" />
+                <node concept="3TrEf2" id="1HXIG33ArRj" role="2OqNvi">
+                  <ref role="3Tt5mk" to="yvgz:17L66asWE$7" resolve="type" />
                 </node>
               </node>
               <node concept="359W_D" id="5CpI4wBCD2a" role="37wK5m">
-                <ref role="359W_E" to="yvgz:7YUYw4xHlaz" resolve="FunctionBlockContainer" />
-                <ref role="359W_F" to="yvgz:3eP8Zudp5G8" resolve="data_ports" />
+                <ref role="359W_E" to="yvgz:29RmJoXeePe" resolve="AlgorithmBlock" />
+                <ref role="359W_F" to="yvgz:1m4TMuc7HkT" resolve="data_blocks" />
               </node>
             </node>
           </node>
@@ -185,20 +199,33 @@
             <node concept="2YIFZM" id="1sZtr$_mKQZ" role="3clFbG">
               <ref role="37wK5l" to="35tq:~SimpleRoleScope.forNamedElements(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.language.SContainmentLink)" resolve="forNamedElements" />
               <ref role="1Pybhc" to="35tq:~SimpleRoleScope" resolve="SimpleRoleScope" />
-              <node concept="2OqwBi" id="1sZtr$_mO46" role="37wK5m">
-                <node concept="1PxgMI" id="1sZtr$_mNwy" role="2Oq$k0">
-                  <node concept="chp4Y" id="1sZtr$_mNIB" role="3oSUPX">
-                    <ref role="cht4Q" to="47d3:4sLBCvXv8cc" resolve="AlgorithmBehavior" />
+              <node concept="2OqwBi" id="1HXIG33An8P" role="37wK5m">
+                <node concept="2OqwBi" id="1HXIG33Am8e" role="2Oq$k0">
+                  <node concept="1PxgMI" id="1HXIG33AlVe" role="2Oq$k0">
+                    <node concept="chp4Y" id="1HXIG33AlWO" role="3oSUPX">
+                      <ref role="cht4Q" to="47d3:4sLBCvXv7MC" resolve="SimpleLifeCycle" />
+                    </node>
+                    <node concept="2OqwBi" id="1sZtr$_mO46" role="1m5AlR">
+                      <node concept="1PxgMI" id="1sZtr$_mNwy" role="2Oq$k0">
+                        <node concept="chp4Y" id="1sZtr$_mNIB" role="3oSUPX">
+                          <ref role="cht4Q" to="47d3:4sLBCvXv8cc" resolve="AlgorithmBehavior" />
+                        </node>
+                        <node concept="2rP1CM" id="1sZtr$_mL4F" role="1m5AlR" />
+                      </node>
+                      <node concept="1mfA1w" id="1HXIG33Albr" role="2OqNvi" />
+                    </node>
                   </node>
-                  <node concept="2rP1CM" id="1sZtr$_mL4F" role="1m5AlR" />
+                  <node concept="3TrEf2" id="7gRMHh5yntO" role="2OqNvi">
+                    <ref role="3Tt5mk" to="47d3:7gRMHh5ylR$" resolve="algorithm" />
+                  </node>
                 </node>
-                <node concept="3TrEf2" id="1sZtr$_mOqF" role="2OqNvi">
-                  <ref role="3Tt5mk" to="47d3:4sLBCvXv8gh" resolve="algorithm" />
+                <node concept="3TrEf2" id="1HXIG33AnBJ" role="2OqNvi">
+                  <ref role="3Tt5mk" to="yvgz:17L66asWE$7" resolve="type" />
                 </node>
               </node>
               <node concept="359W_D" id="1sZtr$_mQ2y" role="37wK5m">
-                <ref role="359W_E" to="yvgz:7YUYw4xHlaz" resolve="FunctionBlockContainer" />
-                <ref role="359W_F" to="yvgz:4iWYoaWUTsh" resolve="scheduler_blocks" />
+                <ref role="359W_F" to="yvgz:1m4TMuc7HkU" resolve="scheduler_blocks" />
+                <ref role="359W_E" to="yvgz:29RmJoXeePe" resolve="AlgorithmBlock" />
               </node>
             </node>
           </node>

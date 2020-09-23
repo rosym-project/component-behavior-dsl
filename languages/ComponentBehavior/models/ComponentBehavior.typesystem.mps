@@ -9,6 +9,7 @@
     <import index="l1zz" ref="r:7dde0f85-b752-4c1f-8bd0-8361dd2efaa4(Component.structure)" implicit="true" />
     <import index="47d3" ref="r:186aac84-3221-4de3-be35-8e549517a374(ComponentBehavior.structure)" implicit="true" />
     <import index="yvgz" ref="r:3b411c10-569a-4299-9505-176144359d3b(Algorithm.structure)" implicit="true" />
+    <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -51,6 +52,13 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
+        <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
+      </concept>
+      <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
+        <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+        <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
+      </concept>
       <concept id="1883223317721008708" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfStatement" flags="nn" index="Jncv_">
         <reference id="1883223317721008712" name="nodeConcept" index="JncvD" />
         <child id="1883223317721008709" name="body" index="Jncv$" />
@@ -59,6 +67,7 @@
       </concept>
       <concept id="1883223317721008713" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfVariable" flags="ng" index="JncvC" />
       <concept id="1883223317721107059" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfVarReference" flags="nn" index="Jnkvi" />
+      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
       </concept>
@@ -95,17 +104,22 @@
               </node>
             </node>
             <node concept="mw_s8" id="3eOYxdwrKU6" role="1ZfhKB">
-              <node concept="2OqwBi" id="3eOYxdwrLeD" role="mwGJk">
-                <node concept="2OqwBi" id="3eOYxdwrKWN" role="2Oq$k0">
-                  <node concept="1YBJjd" id="3eOYxdwrKU4" role="2Oq$k0">
-                    <ref role="1YBMHb" node="3eOYxdwrINz" resolve="portMapping" />
+              <node concept="2OqwBi" id="1HXIG33wfgp" role="mwGJk">
+                <node concept="1PxgMI" id="1HXIG33wf0Y" role="2Oq$k0">
+                  <node concept="chp4Y" id="7gRMHh5z$XE" role="3oSUPX">
+                    <ref role="cht4Q" to="yvgz:29RmJoXeePk" resolve="DataBlock" />
                   </node>
-                  <node concept="3TrEf2" id="3eOYxdwrL2X" role="2OqNvi">
-                    <ref role="3Tt5mk" to="47d3:4sLBCvXvB7u" resolve="algorithmPort" />
+                  <node concept="2OqwBi" id="3eOYxdwrKWN" role="1m5AlR">
+                    <node concept="1YBJjd" id="3eOYxdwrKU4" role="2Oq$k0">
+                      <ref role="1YBMHb" node="3eOYxdwrINz" resolve="portMapping" />
+                    </node>
+                    <node concept="3TrEf2" id="7gRMHh5zrmX" role="2OqNvi">
+                      <ref role="3Tt5mk" to="47d3:7gRMHh5zgtm" resolve="algorithmPort" />
+                    </node>
                   </node>
                 </node>
-                <node concept="3TrEf2" id="3eOYxdwrLtD" role="2OqNvi">
-                  <ref role="3Tt5mk" to="yvgz:6po$YwiVDtx" resolve="type" />
+                <node concept="3TrEf2" id="1HXIG33wfvD" role="2OqNvi">
+                  <ref role="3Tt5mk" to="tpee:4VkOLwjf83e" resolve="type" />
                 </node>
               </node>
             </node>
@@ -129,17 +143,22 @@
         <node concept="3clFbS" id="3eOYxdwrL$d" role="Jncv$">
           <node concept="2NvLDW" id="3eOYxdwrLSQ" role="3cqZAp">
             <node concept="mw_s8" id="3eOYxdwrLSY" role="1ZfhK$">
-              <node concept="2OqwBi" id="3eOYxdwrMbK" role="mwGJk">
-                <node concept="2OqwBi" id="3eOYxdwrLVF" role="2Oq$k0">
-                  <node concept="1YBJjd" id="3eOYxdwrLSW" role="2Oq$k0">
-                    <ref role="1YBMHb" node="3eOYxdwrINz" resolve="portMapping" />
+              <node concept="2OqwBi" id="1HXIG33wfVE" role="mwGJk">
+                <node concept="1PxgMI" id="7gRMHh5zkhP" role="2Oq$k0">
+                  <node concept="2OqwBi" id="3eOYxdwrLVF" role="1m5AlR">
+                    <node concept="1YBJjd" id="3eOYxdwrLSW" role="2Oq$k0">
+                      <ref role="1YBMHb" node="3eOYxdwrINz" resolve="portMapping" />
+                    </node>
+                    <node concept="3TrEf2" id="7gRMHh5zk3A" role="2OqNvi">
+                      <ref role="3Tt5mk" to="47d3:7gRMHh5zgtm" resolve="algorithmPort" />
+                    </node>
                   </node>
-                  <node concept="3TrEf2" id="3eOYxdwrM2N" role="2OqNvi">
-                    <ref role="3Tt5mk" to="47d3:4sLBCvXvB7u" resolve="algorithmPort" />
+                  <node concept="chp4Y" id="7gRMHh5z$SJ" role="3oSUPX">
+                    <ref role="cht4Q" to="yvgz:29RmJoXeePk" resolve="DataBlock" />
                   </node>
                 </node>
-                <node concept="3TrEf2" id="3eOYxdwrMo5" role="2OqNvi">
-                  <ref role="3Tt5mk" to="yvgz:6po$YwiVDtx" resolve="type" />
+                <node concept="3TrEf2" id="1HXIG33wgdu" role="2OqNvi">
+                  <ref role="3Tt5mk" to="tpee:4VkOLwjf83e" resolve="type" />
                 </node>
               </node>
             </node>

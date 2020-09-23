@@ -72,6 +72,9 @@
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
+      <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
+        <child id="1068580123156" name="expression" index="3clFbG" />
+      </concept>
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
@@ -164,12 +167,24 @@
       <node concept="3F0ifn" id="7JrCdBmuN5Z" role="3EZMnx">
         <property role="3F0ifm" value="algorithm" />
       </node>
-      <node concept="1iCGBv" id="4sLBCvXvNjt" role="3EZMnx">
-        <ref role="1NtTu8" to="47d3:4sLBCvXvB7u" resolve="algorithmPort" />
-        <node concept="1sVBvm" id="4sLBCvXvNjv" role="1sWHZn">
-          <node concept="3F0A7n" id="4sLBCvXvNjE" role="2wV5jI">
-            <property role="1Intyy" value="true" />
-            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      <node concept="1HlG4h" id="1HXIG33w9jj" role="3EZMnx">
+        <node concept="1HfYo3" id="1HXIG33w9jl" role="1HlULh">
+          <node concept="3TQlhw" id="1HXIG33w9jn" role="1Hhtcw">
+            <node concept="3clFbS" id="1HXIG33w9jp" role="2VODD2">
+              <node concept="3clFbF" id="7gRMHh5z1U2" role="3cqZAp">
+                <node concept="2OqwBi" id="7gRMHh5z2JH" role="3clFbG">
+                  <node concept="2OqwBi" id="7gRMHh5z26P" role="2Oq$k0">
+                    <node concept="pncrf" id="7gRMHh5z1U0" role="2Oq$k0" />
+                    <node concept="3TrEf2" id="7gRMHh5zibt" role="2OqNvi">
+                      <ref role="3Tt5mk" to="47d3:7gRMHh5zgtm" resolve="algorithmPort" />
+                    </node>
+                  </node>
+                  <node concept="3TrcHB" id="7gRMHh5z30k" role="2OqNvi">
+                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>
@@ -178,21 +193,6 @@
   <node concept="24kQdi" id="7JrCdBmuPCy">
     <ref role="1XX52x" to="47d3:4sLBCvXv8cc" resolve="AlgorithmBehavior" />
     <node concept="3EZMnI" id="7JrCdBmuPC$" role="2wV5jI">
-      <node concept="3EZMnI" id="7JrCdBmuPCO" role="3EZMnx">
-        <node concept="2iRfu4" id="7JrCdBmuPCP" role="2iSdaV" />
-        <node concept="3F0ifn" id="7JrCdBmuPCI" role="3EZMnx">
-          <property role="3F0ifm" value="algorithm" />
-        </node>
-        <node concept="1iCGBv" id="7JrCdBmuPCY" role="3EZMnx">
-          <ref role="1NtTu8" to="47d3:4sLBCvXv8gh" resolve="algorithm" />
-          <node concept="1sVBvm" id="7JrCdBmuPD0" role="1sWHZn">
-            <node concept="3F0A7n" id="7JrCdBmuPDt" role="2wV5jI">
-              <property role="1Intyy" value="true" />
-              <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-            </node>
-          </node>
-        </node>
-      </node>
       <node concept="3EZMnI" id="1sZtr$_musm" role="3EZMnx">
         <node concept="VPM3Z" id="1sZtr$_muso" role="3F10Kt" />
         <node concept="3F0ifn" id="1sZtr$_musq" role="3EZMnx">
@@ -231,9 +231,25 @@
   <node concept="24kQdi" id="2ZfrMhTizOo">
     <ref role="1XX52x" to="47d3:4sLBCvXv7MC" resolve="SimpleLifeCycle" />
     <node concept="3EZMnI" id="2ZfrMhTizOt" role="2wV5jI">
-      <node concept="3F0ifn" id="2ZfrMhTizOv" role="3EZMnx">
-        <property role="3F0ifm" value="Simple Lifecycle" />
+      <node concept="3EZMnI" id="7gRMHh5xUPs" role="3EZMnx">
+        <node concept="2iRfu4" id="7gRMHh5xUPt" role="2iSdaV" />
+        <node concept="3F0ifn" id="2ZfrMhTizOv" role="3EZMnx">
+          <property role="3F0ifm" value="Simple Lifecycle" />
+        </node>
+        <node concept="3F0A7n" id="7gRMHh5xUQ1" role="3EZMnx">
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
       </node>
+      <node concept="3EZMnI" id="7JrCdBmuPCO" role="3EZMnx">
+        <node concept="2iRfu4" id="7JrCdBmuPCP" role="2iSdaV" />
+        <node concept="3F0ifn" id="7JrCdBmuPCI" role="3EZMnx">
+          <property role="3F0ifm" value="algorithm" />
+        </node>
+        <node concept="3F1sOY" id="1OEFvYvq0eM" role="3EZMnx">
+          <ref role="1NtTu8" to="47d3:7gRMHh5ylR$" resolve="algorithm" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="1HXIG33wo8h" role="3EZMnx" />
       <node concept="3EZMnI" id="2ZfrMhTizOF" role="3EZMnx">
         <node concept="3F0ifn" id="2ZfrMhTizO$" role="3EZMnx">
           <property role="3F0ifm" value="init" />
@@ -303,16 +319,28 @@
       <node concept="3F0ifn" id="5CpI4wBFgzF" role="3EZMnx">
         <property role="3F0ifm" value="algorithm" />
       </node>
-      <node concept="1iCGBv" id="5CpI4wBFgzV" role="3EZMnx">
-        <ref role="1NtTu8" to="47d3:4sLBCvXvB7u" resolve="algorithmPort" />
-        <node concept="1sVBvm" id="5CpI4wBFgzX" role="1sWHZn">
-          <node concept="3F0A7n" id="5CpI4wBFg$a" role="2wV5jI">
-            <property role="1Intyy" value="true" />
-            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      <node concept="2iRfu4" id="5CpI4wBFgyR" role="2iSdaV" />
+      <node concept="1HlG4h" id="1HXIG33waIq" role="3EZMnx">
+        <node concept="1HfYo3" id="1HXIG33waIs" role="1HlULh">
+          <node concept="3TQlhw" id="1HXIG33waIu" role="1Hhtcw">
+            <node concept="3clFbS" id="1HXIG33waIw" role="2VODD2">
+              <node concept="3clFbF" id="1HXIG33waNf" role="3cqZAp">
+                <node concept="2OqwBi" id="1HXIG33wbMD" role="3clFbG">
+                  <node concept="2OqwBi" id="1HXIG33wb0f" role="2Oq$k0">
+                    <node concept="pncrf" id="1HXIG33waNe" role="2Oq$k0" />
+                    <node concept="3TrEf2" id="7gRMHh5zi_C" role="2OqNvi">
+                      <ref role="3Tt5mk" to="47d3:7gRMHh5zgtm" resolve="algorithmPort" />
+                    </node>
+                  </node>
+                  <node concept="3TrcHB" id="1HXIG33wc0U" role="2OqNvi">
+                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>
-      <node concept="2iRfu4" id="5CpI4wBFgyR" role="2iSdaV" />
     </node>
   </node>
 </model>
