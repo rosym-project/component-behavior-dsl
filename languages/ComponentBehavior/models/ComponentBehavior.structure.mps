@@ -82,7 +82,6 @@
     <node concept="1TJgyj" id="1sZtr$_murN" role="1TKVEi">
       <property role="IQ2ns" value="1675187024461162227" />
       <property role="20kJfa" value="schedule" />
-      <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" to="yvgz:1Nl8mqSY6OM" resolve="SchedulerBlockInst" />
     </node>
     <node concept="PrWs8" id="4sLBCvXvp3i" role="PzmwI">
