@@ -201,18 +201,14 @@
               <ref role="1Pybhc" to="35tq:~SimpleRoleScope" resolve="SimpleRoleScope" />
               <node concept="2OqwBi" id="1HXIG33An8P" role="37wK5m">
                 <node concept="2OqwBi" id="1HXIG33Am8e" role="2Oq$k0">
-                  <node concept="1PxgMI" id="1HXIG33AlVe" role="2Oq$k0">
-                    <node concept="chp4Y" id="1HXIG33AlWO" role="3oSUPX">
-                      <ref role="cht4Q" to="47d3:4sLBCvXv7MC" resolve="SimpleLifeCycle" />
-                    </node>
-                    <node concept="2OqwBi" id="1sZtr$_mO46" role="1m5AlR">
-                      <node concept="1PxgMI" id="1sZtr$_mNwy" role="2Oq$k0">
-                        <node concept="chp4Y" id="1sZtr$_mNIB" role="3oSUPX">
-                          <ref role="cht4Q" to="47d3:4sLBCvXv8cc" resolve="AlgorithmBehavior" />
+                  <node concept="2OqwBi" id="1sZtr$_mO46" role="2Oq$k0">
+                    <node concept="2rP1CM" id="1sZtr$_mL4F" role="2Oq$k0" />
+                    <node concept="2Xjw5R" id="5GTDeybl1Rc" role="2OqNvi">
+                      <node concept="1xMEDy" id="5GTDeybl1Re" role="1xVPHs">
+                        <node concept="chp4Y" id="5GTDeybl2ar" role="ri$Ld">
+                          <ref role="cht4Q" to="47d3:4sLBCvXv7MC" resolve="SimpleLifeCycle" />
                         </node>
-                        <node concept="2rP1CM" id="1sZtr$_mL4F" role="1m5AlR" />
                       </node>
-                      <node concept="1mfA1w" id="1HXIG33Albr" role="2OqNvi" />
                     </node>
                   </node>
                   <node concept="3TrEf2" id="7gRMHh5yntO" role="2OqNvi">
